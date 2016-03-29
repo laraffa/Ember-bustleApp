@@ -11,5 +11,18 @@ export default Ember.Route.extend({
       newEntry.save();
       this.transitionTo('admin');
     },
+    update(entry, params) {
+      Object.keys(params).forEach(function(key) {
+        if(params[key]!==undefined) {
+          entry.set(key,params[key]);
+        }
+      });
+      entry.save();
+      this.transitionTo('admin');
+    },
+    destroyEntry(entry) {
+      entry.destroyRecord();
+      this.transitionTo('admin');
+    }
   }
 });

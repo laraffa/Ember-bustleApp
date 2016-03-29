@@ -1,7 +1,7 @@
 <h1>Admin Portal</h1>
 
 {{#each model as |entry|}}
-   {{entry-tile entry=entry}}
+   {{entry-tile entry=entry update="update" destroyEntry="destroyEntry"}}
 {{/each}}
 
 {{new-entry save2="save3"}}

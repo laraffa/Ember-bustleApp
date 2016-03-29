@@ -5,5 +5,7 @@
         <img src="{{entry.image}}"><br>
         <p>{{entry.article}}</p>
         {{#link-to 'single' entry.id}}<p>Click to view more</p>{{/link-to}}
+         {{update-entry entry=entry update="update"}}
+        <button {{action 'delete' entry}}>Delete</button>
   </div>
 </div>
