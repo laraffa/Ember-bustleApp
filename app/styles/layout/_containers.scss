@@ -16,3 +16,8 @@
 .singleContainer {
   @include outer-container;
 }
+
+#myCarousel img {
+    height: 300px;
+    width: 100%;
+}
