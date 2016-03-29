@@ -1,0 +1,9 @@
+<h1>Bustle Home</h1>
+<p>We hope you find exactly what you're looking</p>
+
+
+  {{#each model as |entry|}}
+     {{entry-tile entry=entry}}
+  {{/each}}
+
+{{#link-to 'admin'}}Admin Portal{{/link-to}}

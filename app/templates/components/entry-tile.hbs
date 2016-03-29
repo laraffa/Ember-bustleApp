@@ -1,0 +1,9 @@
+<div class="entryContainer">
+  <div class="entry">
+    <h3>{{entry.headline}}</h3>
+        Author: {{entry.author}}<br>
+        <img src="{{entry.image}}"><br>
+        <p>{{entry.article}}</p>
+        {{#link-to 'single' entry.id}}<p>Click to view more</p>{{/link-to}}
+  </div>
+</div>
